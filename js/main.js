@@ -2,18 +2,18 @@
 const songList = [
     {
         title: "Electrica TiagoPZK",
-        file: "electrica.mp3",
+        file: "https://00tino.github.io/mp3Player/audio/electrica.mp3",
         cover: "img1.jpg"
 
     },
     {
         title: "BZRP 52 ft.Quevedo",
-        file: "quevedo.mp3",
+        file: "https://00tino.github.io/mp3Player/audio/QUEVEDO.mp3",
         cover: "img2.jpg"
     },
     {
         title: "La Bachata",
-        file: "bachata.mp3",
+        file: "https://00tino.github.io/mp3Player/audio/Bachata.mp3",
         cover: "img3.jpg"
     },
 ]
@@ -72,7 +72,7 @@ function loadSong(songIndex) {
     if (songIndex !== actualSong) {
         changeActiveClass(actualSong, songIndex)
         actualSong = songIndex
-        audio.src = "./audio/" + songList[songIndex].file
+        audio.src = songList[songIndex].file
         playSong()
         changeSongtitle(songIndex)
         changeCover(songIndex)
